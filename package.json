@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "Server.js",
+  "engines": {
+    "node": "v16.x.x",
+    "npm": "v7.x.x"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "concurrently \"npm run front\" \" npm run back\"",
-    "front" :"cd client && npm start" ,
-    "back" :"nodemon Server.js" 
+    "server": "nodemon Server.js",
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
     
   },
   "author": "",

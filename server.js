@@ -8,7 +8,7 @@ require("dotenv").config();
 //create instance of Express
 const app = express();
 
-const Port = process.env.Port || 8000;
+const Port = process.env.PORT || 8000;
 
 //connect to Server //
 app.listen(Port, (err) => {

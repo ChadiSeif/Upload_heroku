@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "server": "nodemon Server.js",
+    "server": "nodemon server.js",
     "client": "cd client && npm run start",
     "server-install": "npm install",
     "client-install": "cd client && npm install",
@@ -31,7 +31,8 @@
     "mongoose": "^6.1.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.15",
-    "redux-thunk": "^2.4.1"
+    "redux-thunk": "^2.4.1",
+    "express":"*"
   } 
   
 }

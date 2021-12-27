@@ -2,7 +2,7 @@
   "name": "test2",
   "version": "1.0.0",
   "description": "",
-  "main": "Server.js",
+  "main": "server.js",
   "engines": {
     "node": "v16.x.x",
     "npm": "v7.x.x"},

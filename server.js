@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const connectDb = require("./config/connect");
 const mysql = require("mysql");
+const path = require("path");
 
 require("dotenv").config();
 

@@ -5,7 +5,8 @@
   "main": "server.js",
   "engines": {
     "node": "v16.x.x",
-    "npm": "v7.x.x"},
+    "npm": "v7.x.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -16,7 +17,6 @@
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
-    
   },
   "author": "",
   "license": "ISC",
@@ -26,13 +26,13 @@
     "body-parser": "^1.19.0",
     "concurrently": "^6.4.0",
     "dotenv": "^10.0.0",
+    "express": "*",
     "express-validator": "^6.13.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.15",
-    "redux-thunk": "^2.4.1",
-    "express":"*"
-  } 
-  
+    "path": "^0.12.7",
+    "redux-thunk": "^2.4.1"
+  }
 }
